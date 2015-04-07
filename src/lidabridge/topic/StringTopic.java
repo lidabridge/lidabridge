@@ -38,7 +38,7 @@ public class StringTopic extends ROSTopic {
 
 	@Override
 	public void Publish() {
-		String msg = "{\"data\":" + value + "}";
+		String msg = "{\"data\":\"" + value +  "\"}";
 		getClient().publishTopic(this, msg);		
 	}
 
